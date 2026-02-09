@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"href="sciisor.css">
+  <link rel="stylesheet" href="hello.css">
+
+    <title>WebDev</title>
 </head>
 <body>
-    <div class="container">
-    <img src="logo.GOOGLE.png" alt="Google logo">
-    <input type="text" placeholder="Search">
-    <button>Google search</button>
-    <button> I'm feeling</button>
-  </div>
-    
+    <h1>Temperature Convertor</h1>
+    <form>
+        <input type="number" id="textBox" value="0"><br>
+
+        <input type="radio" id="toM" name="unit">
+        <label for="toFahrenheit">mile ➡️ </label><br>
+        
+        <input type="radio" id="toCelcuis" name="unit">
+        <label for="toCelcuis">fahrenheit ➡️ celcuis</label>
+        <button type="button"  onclick="Convert()">Submit</button>
+        <p id="result">please selecta unit</p>
+    </form>
+    <script src="srprin.js"></script>
 </body>
 </html>

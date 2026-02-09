@@ -6,7 +6,6 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
-
 }
 
 /* Stack items vertically */
@@ -19,20 +18,20 @@ body {
 
 /* Logo */
 .container img {
-  width: 50%;
+  width: 70%;
 }
 
 /* Search input */
 .container input {
-  width: 70%;;
+  width: 300px;
   padding: 10px 15px;
- 
+  font-size: 16px;
   border-radius: 20px;
-  border: 1px solid #4a4e7e;
+  border: 1px solid #ccc;
   outline: none;
 }
 
-
+/* Buttons */
 .container button {
   padding: 8px 16px;
   font-size: 14px;
@@ -42,6 +41,7 @@ body {
   border-radius: 4px;
 }
 
+/* Buttons side by side (like Google) */
 .container button:first-of-type {
   margin-right: 10px;
 }
