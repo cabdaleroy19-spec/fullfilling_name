@@ -1,20 +1,18 @@
-const textBox = document.getElementById("textBox");
-const toKM = document.getElementById("toKM");
-const toMile = document.getElementById("toMile");
-const result = document.getElementById("result");
+let count = 0;
+let countEl = document.getElementById("count");
+let saveEl=document.getElementById("save-el");
 
-function Convert() {
-    let value = Number(textBox.value);
 
-    if (toKM.checked) {
-        let km = value * 1.6;
-        result.textContent = km.toFixed(1) + " km";
-    }
-    else if (toMile.checked) {
-        let miles = value / 1.6;
-        result.textContent = miles.toFixed(1) + " miles";
-    }
-    else {
-        result.textContent = "Please select a unit";
-    }
+function increment() {
+    count +=1;
+    countEl.textContent = count;
+}
+let savetEl = document.getElementById("save-btn");
+function save() {
+
+    let countStr = count + " - "
+    saveEl.innerText += countStr;
+      count=0;
+    countEl.tectContent=0;
+  
 }
