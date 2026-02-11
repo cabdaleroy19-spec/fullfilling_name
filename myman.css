@@ -1,19 +1,48 @@
 body{
-  font-family:Arial, Helvetica, sans-serif;
- padding-left: 70px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+
   font-weight: bold;
+  background-image:url("japan.jpg");
+  background-size:cover;
+   text-align:center;
+  height: 100vh;
+}
+.container {
+  background: white;
+  max-width: 60%;   /* reduce width */
+  margin: 50px auto; /* adds space at top/bottom */
+  border: 3px solid;
+  height: 50vh;     /* reduce height */
+  padding: 20px;    /* optional, makes content inside look nicer */
+  box-sizing: border-box; /* includes padding in width/height */
+  border-radius: 10px; /* optional, rounded corners */
+}
+
+
+h1{
+ margin-top:10px;
+}
+
+h2{
+  font-size:50px;
+  margin-top:0;
 }
 
 button{
 background-color:rgb(134, 44, 44);
 color:white;
 width :200px;
- margin-bottom: 5px;
- border-radius: 5px;
-   display: block;
-    margin: 10px 0;
 
+   display: block;
+    margin: 10px auto;
+    border:none;
+    text-align: center;
+   font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
+
 #save-btn{
   color:white;
    width: 200px;
@@ -21,3 +50,4 @@ width :200px;
     border-radius: 5px;
     background-color: darkgreen;
 }
+

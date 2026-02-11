@@ -1,3 +1,7 @@
+
+
+
+
 function pickComputerMove() {
   const randomNumber = Math.random();
   if (randomNumber < 1/3) return 'rock';
@@ -10,6 +14,9 @@ const score = {
   losses: 0,
   ties: 0,
 };
+document.querySelector('.js-score')
+.innerHTML='Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}';
+  
 
 function playGame(playerMove) {
   const computerMove = pickComputerMove();

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>superSimple</title>
+</head>
+<body>
+<p> Youtube Subscribe Button</p>
+<button  onclick= "Subscribe()"
+class="js-subscribe-button
+">Subscribe</button>
+
+<P>Rock  Paper  Scissors</P>
+<p> Amozon shipping calculator</p>
+<input placeholder="cost of order" type="number" class="js-cost-input">
+
+<button onclick="calculateTotal()">Calculate</button>
+
+ <script> 
+function calculateTotal() {
+  const inputElement = document.querySelector('js-cost-input');
+  let cost = Number(inputElement.value);
+
+  if (cost < 40) {
+    cost += 10;
+  }
+
+  document.querySelector('.js-total-cost').innerHTML = `$${cost}`;
+}
+
+function Subscribe() {
+  const buttonElement = document.querySelector('.js-subscribe-button');
+  buttonElement.innerHTML =
+    buttonElement.innerHTML === 'Subscribe'
+      ? 'Subscribed'
+      : 'Subscribe';
+}
+</script>
+
+</body>
+</html>
